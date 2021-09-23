@@ -1,0 +1,24 @@
+﻿{
+    "tiltingPointRegistry": {
+        "registryName": "Tilting Point Registry",
+        "registryUrl": "http://registry.tiltingpoint.io",
+        "scopes": [
+            "com.tiltingpoint"
+        ]
+    },
+    "otherRegistries": [],
+    "otherDependencies": [],
+    "tiltingPointPackages": [
+        "com.tiltingpoint.ads",
+        "com.tiltingpoint.ads-ironsource-mobile",
+        "com.tiltingpoint.ads-vungle-uwp",
+        "com.tiltingpoint.amplitude",
+        "com.tiltingpoint.appsflyer",
+        "com.tiltingpoint.core",
+        "com.tiltingpoint.iostracking",
+        "com.tiltingpoint.logtracker",
+        "com.tiltingpoint.ops",
+        "com.tiltingpoint.purchasing",
+        "com.tiltingpoint.zendesk"
+    ]
+}
