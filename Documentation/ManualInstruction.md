@@ -2,7 +2,7 @@
 
 
 ## 1. Get access to Tilting Point registry.
-To get access to the registry contact DefRel team. Response will contain username and password.
+To get access to the registry contact DevRel team. Response will contain username and password.
 
 
 ## 2. Install NPM
