@@ -1,0 +1,17 @@
+{
+  "name": "com.tiltingpoint.sdkinstaller",
+  "version": "1.0.3",
+  "displayName": "TP SDK Installer",
+  "description": "Installer with UI that will help you to setup access to new TiltingPoint registry.",
+  "unity": "2018.3",
+  "unityRelease": "1f1",
+  "author": {
+    "name": "Tilting Point Media LLC",
+    "email": "engineering@tiltingpoint.com",
+    "url": "https://www.tiltingpoint.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ValentynKhylchukTiltingPoint/com.tiltingpoint.sdkinstaller.test1.git"
+  }
+}
