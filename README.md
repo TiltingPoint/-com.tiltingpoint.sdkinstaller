@@ -19,6 +19,15 @@ Installer will help you to get access to Tilting Point packages registry and con
         "dependencies": [
           "com.tiltingpoint.sdkinstaller": "https://github.com/TiltingPoint/com.tiltingpoint.sdkinstaller.git",
         ]
+        
+    #### With Unity Package manager ( from loacal files ):
+
+    * download files from repo;
+    * open `Main Menu -> Windows -> PackageManager`;
+    * press `+` (top left corner);
+    * select `Add package from disk`;
+    * select `package.json`;
+    * done.        
 
 ### Use
 Open installer window `Main Menu -> TiltingPoint -> SDK Installer -> Show SDK Installer`;
