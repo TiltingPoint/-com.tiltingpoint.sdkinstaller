@@ -10,7 +10,7 @@ Installer will help you to get access to Tilting Point packages registry and con
     * open `Main Menu -> Windows -> PackageManager`;
     * press `+` (top left corner);
     * select `Add package from git URL`;
-    * past `https://github.com/ValentynKhylchukTiltingPoint/com.tiltingpoint.sdkinstaller.test1.git`;
+    * past `https://github.com/TiltingPoint/com.tiltingpoint.sdkinstaller.git`;
     * done.
 
     #### Manually to manifest.json:
