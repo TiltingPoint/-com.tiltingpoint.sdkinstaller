@@ -17,7 +17,7 @@ Installer will help you to get access to Tilting Point packages registry and con
     Open `<project path>/Packages/manifest.json` and add packages to dependencies scope.
     
         "dependencies": [
-          "com.tiltingpoint.sdkinstaller": "https://github.com/ValentynKhylchukTiltingPoint/com.tiltingpoint.sdkinstaller.test1.git",
+          "com.tiltingpoint.sdkinstaller": "https://github.com/TiltingPoint/com.tiltingpoint.sdkinstaller.git",
         ]
 
 ### Use
