@@ -10,15 +10,24 @@ Installer will help you to get access to Tilting Point packages registry and con
     * open `Main Menu -> Windows -> PackageManager`;
     * press `+` (top left corner);
     * select `Add package from git URL`;
-    * past `https://github.com/ValentynKhylchukTiltingPoint/com.tiltingpoint.sdkinstaller.test1.git`;
+    * past `https://github.com/TiltingPoint/com.tiltingpoint.sdkinstaller.git`;
     * done.
 
     #### Manually to manifest.json:
     Open `<project path>/Packages/manifest.json` and add packages to dependencies scope.
     
         "dependencies": [
-          "com.tiltingpoint.sdkinstaller": "https://github.com/ValentynKhylchukTiltingPoint/com.tiltingpoint.sdkinstaller.test1.git",
+          "com.tiltingpoint.sdkinstaller": "https://github.com/TiltingPoint/com.tiltingpoint.sdkinstaller.git",
         ]
+        
+    #### With Unity Package manager ( from loacal files ):
+
+    * download files from repo;
+    * open `Main Menu -> Windows -> PackageManager`;
+    * press `+` (top left corner);
+    * select `Add package from disk`;
+    * select `package.json`;
+    * done.        
 
 ### Use
 Open installer window `Main Menu -> TiltingPoint -> SDK Installer -> Show SDK Installer`;
