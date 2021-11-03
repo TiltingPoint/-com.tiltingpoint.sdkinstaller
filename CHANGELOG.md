@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.4]
 - Fix registries parsing issue.
+- Fix comma issue for registries not in the end of manifest.
 
 ## [1.0.3]
 - Base version.
