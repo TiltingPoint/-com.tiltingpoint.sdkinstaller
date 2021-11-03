@@ -135,11 +135,12 @@ namespace TiltingPoint.Installer.Editor.Tools
 
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("{");
-            for (var i = startIndex; i <= endIndex; i++)
+            for (var i = startIndex; i < endIndex; i++)
             {
                 stringBuilder.AppendLine(content[i]);
             }
 
+            stringBuilder.AppendLine(content[endIndex].Replace(",", string.Empty));
             stringBuilder.AppendLine("}");
             var text = stringBuilder.ToString();
             var result = JsonUtility.FromJson<ScopeRegisters>(text);
