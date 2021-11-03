@@ -106,6 +106,12 @@ namespace TiltingPoint.Installer.Editor.Tools
 
             content.RemoveRange(registriesBeginLine, registriesEndLine - registriesBeginLine + 1);
             content.InsertRange(registriesBeginLine, newRegistries);
+
+            if (!content[registriesBeginLine + newRegistries.Count].StartsWith("}"))
+            {
+                content[registriesBeginLine + newRegistries.Count - 1] += ",";
+            }
+
             File.WriteAllLines(manifestPath, content);
             return (true, null);
         }
@@ -169,7 +175,7 @@ namespace TiltingPoint.Installer.Editor.Tools
 
         private static (int BeginLineIndex, int EndLineIndex) AddScopedRegistries(List<string> content)
         {
-            var text = new[] {"  \"scopedRegistries\": []"};
+            var text = new[] { "  \"scopedRegistries\": []" };
             var lineForInsert = -1;
             for (var i = content.Count() - 1; i >= 1; i--)
             {
