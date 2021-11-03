@@ -1,6 +1,6 @@
 {
   "name": "com.tiltingpoint.sdkinstaller",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "displayName": "TP SDK Installer",
   "description": "Installer with UI that will help you to setup access to new TiltingPoint registry.",
   "unity": "2018.3",
