@@ -106,6 +106,12 @@ namespace TiltingPoint.Installer.Editor.Tools
 
             content.RemoveRange(registriesBeginLine, registriesEndLine - registriesBeginLine + 1);
             content.InsertRange(registriesBeginLine, newRegistries);
+
+            if (!content[registriesBeginLine + newRegistries.Count].StartsWith("}"))
+            {
+                content[registriesBeginLine + newRegistries.Count - 1] += ",";
+            }
+
             File.WriteAllLines(manifestPath, content);
             return (true, null);
         }
@@ -135,11 +141,12 @@ namespace TiltingPoint.Installer.Editor.Tools
 
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("{");
-            for (var i = startIndex; i <= endIndex; i++)
+            for (var i = startIndex; i < endIndex; i++)
             {
                 stringBuilder.AppendLine(content[i]);
             }
 
+            stringBuilder.AppendLine(content[endIndex].Replace(",", string.Empty));
             stringBuilder.AppendLine("}");
             var text = stringBuilder.ToString();
             var result = JsonUtility.FromJson<ScopeRegisters>(text);
@@ -168,7 +175,7 @@ namespace TiltingPoint.Installer.Editor.Tools
 
         private static (int BeginLineIndex, int EndLineIndex) AddScopedRegistries(List<string> content)
         {
-            var text = new[] {"  \"scopedRegistries\": []"};
+            var text = new[] { "  \"scopedRegistries\": []" };
             var lineForInsert = -1;
             for (var i = content.Count() - 1; i >= 1; i--)
             {
