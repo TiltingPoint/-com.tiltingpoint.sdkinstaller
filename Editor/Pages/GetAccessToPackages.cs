@@ -1,6 +1,4 @@
-// <copyright file="GetAccessToPackages.cs" company="Tilting Point Media LLC">
 // Copyright (c) Tilting Point Media LLC. All rights reserved.
-// </copyright>
 
 using TiltingPoint.Installer.Editor.Data;
 using TiltingPoint.Installer.Editor.Tools.UI;

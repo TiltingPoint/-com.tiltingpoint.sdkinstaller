@@ -1,6 +1,4 @@
-// <copyright file="IInstallerPage.cs" company="Tilting Point Media LLC">
 // Copyright (c) Tilting Point Media LLC. All rights reserved.
-// </copyright>
 
 using TiltingPoint.Installer.Editor.Data;
 

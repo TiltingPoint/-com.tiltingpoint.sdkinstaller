@@ -1,3 +1,5 @@
+// Copyright (c) Tilting Point Media LLC. All rights reserved.
+
 using TiltingPoint.Installer.Editor.Data;
 using TiltingPoint.Installer.Editor.Tools.UI;
 using UnityEditor;

@@ -1,3 +1,5 @@
+// Copyright (c) Tilting Point Media LLC. All rights reserved.
+
 using System;
 using System.Text;
 using UnityEngine;
