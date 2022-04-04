@@ -95,9 +95,9 @@ namespace TiltingPoint.Installer.Editor.Pages
 
             packagesList = result.Where(x => scopes.Any(scope => x.name.StartsWith(scope)))
                                  .Select(x => x.name)
-                                 .Where(x => !packagesList.Contains(x))
                                  .OrderBy(x => x)
                                  .ToList();
+            packagesTool.UpdatePackagesInformation(packagesList, true);
         }
 
         private void ShowPackagesList(IEnumerable<string> packages, UnityPackagesTool tool, bool isBusy)
@@ -116,7 +116,7 @@ namespace TiltingPoint.Installer.Editor.Pages
 
             foreach (var item in packagesArray)
             {
-                ShowPackageInList(item, tool, isBusy);
+                ShowPackageInList(item, isBusy);
             }
 
             EditorGUILayout.EndScrollView();
@@ -141,11 +141,11 @@ namespace TiltingPoint.Installer.Editor.Pages
             EditorGUILayout.EndHorizontal();
         }
 
-        private void ShowPackageInList(string id, UnityPackagesTool tool, bool ignoreActions)
+        private void ShowPackageInList(string id, bool ignoreActions)
         {
             EditorGUILayout.BeginHorizontal();
 
-            var (localVersion, remoteVersion) = tool.GetPackageVersions(id);
+            var (localVersion, remoteVersion) = packagesTool.GetPackageVersions(id);
 
             var canAdd = string.IsNullOrEmpty(localVersion);
             var canUpdate = !string.IsNullOrEmpty(localVersion)
@@ -171,17 +171,17 @@ namespace TiltingPoint.Installer.Editor.Pages
 
             if (ShowButton("Add", ButtonWidth, canAdd) && !ignoreActions)
             {
-                tool.AddPackage(id);
+                packagesTool.AddPackage(id);
             }
 
             if (ShowButton("Update", ButtonWidth, canUpdate) && !ignoreActions)
             {
-                tool.AddPackage(id);
+                packagesTool.AddPackage(id);
             }
 
             if (ShowButton("Remove", ButtonWidth, canRemove) && !ignoreActions)
             {
-                tool.RemovePackage(id);
+                packagesTool.RemovePackage(id);
             }
 
             EditorGUILayout.EndHorizontal();
