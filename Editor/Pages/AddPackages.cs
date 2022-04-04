@@ -16,7 +16,7 @@ namespace TiltingPoint.Installer.Editor.Pages
         private const string HeaderText = "Add packages";
 
         private const string ShortDescription =
-            "It is last step. Please select what do you want to import.";
+            "This is the last step. Please select what do you want to import.";
 
         private const float VersionTextWidth = 50;
         private const float ButtonWidth = 60;

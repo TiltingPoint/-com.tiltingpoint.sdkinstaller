@@ -12,9 +12,9 @@ namespace TiltingPoint.Installer.Editor.Pages
             "Get access to packages.";
 
         private const string DescriptionText =
-            "Our packages are places in privat Vardaccio repository. In order to get access to it" +
-            "you need to contact our team to get your login and password. " +
-            "If you already have access to our packages, press Next.";
+            "Our packages are places in privat Vardaccio repository. In order to get access to it " +
+            "you will need to contact our team to get your login and password. " +
+            "If you already have access to our packages, press Next. ";
 
         private const string ContactEmail = "devrel@tiltingpoint.com";
 
