@@ -50,7 +50,7 @@ namespace TiltingPoint.Installer.Editor.Tools
         /// <summary>
         /// Updates information for packages.
         /// </summary>
-        /// <param name="packagesCollection">Collection of packages identificators(names).</param>
+        /// <param name="packagesCollection">Collection of packages identifiers(names).</param>
         /// <param name="force">Force information update for all packages.</param>
         /// <remarks>If parameter <param name="force"></param> is set to false, only packages that do not have
         /// current information will be updated.</remarks>
@@ -101,8 +101,9 @@ namespace TiltingPoint.Installer.Editor.Tools
                 }
 
                 EditorApplication.update -= UpdateSearchAllResults;
+                var result = searchAllRequest?.Result;
                 searchAllRequest = null;
-                callback?.Invoke(searchAllRequest?.Result);
+                callback?.Invoke(result);
             }
 
             if (IsBusy)
