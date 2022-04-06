@@ -1,6 +1,4 @@
-// <copyright file="GetAccessToPackages.cs" company="Tilting Point Media LLC">
 // Copyright (c) Tilting Point Media LLC. All rights reserved.
-// </copyright>
 
 using TiltingPoint.Installer.Editor.Data;
 using TiltingPoint.Installer.Editor.Tools.UI;
@@ -14,9 +12,9 @@ namespace TiltingPoint.Installer.Editor.Pages
             "Get access to packages.";
 
         private const string DescriptionText =
-            "Our packages are places in privat Vardaccio repository. In order to get access to it" +
-            "you need to contact our team to get your login and password. " +
-            "If you already have access to our packages, press Next.";
+            "Our packages are places in privat Vardaccio repository. In order to get access to it " +
+            "you will need to contact our team to get your login and password. " +
+            "If you already have access to our packages, press Next. ";
 
         private const string ContactEmail = "devrel@tiltingpoint.com";
 

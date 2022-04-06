@@ -1,3 +1,5 @@
+// Copyright (c) Tilting Point Media LLC. All rights reserved.
+
 using TiltingPoint.Installer.Editor.Data;
 using TiltingPoint.Installer.Editor.Tools.UI;
 using UnityEditor;
@@ -10,7 +12,7 @@ namespace TiltingPoint.Installer.Editor.Pages
             "Google External Dependency Manager.";
 
         private const string DescriptionText =
-            "To make evrything work correctly add Google External Dependency Manager into yout project." +
+            "To make everything work correctly add Google External Dependency Manager into yout project. " +
             "Latest version can be found here:";
 
         private const string LatestVersionLink = "https://developers.google.com/unity/archive#external_dependency_manager_for_unity";

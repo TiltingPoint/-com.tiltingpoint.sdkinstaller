@@ -1,6 +1,4 @@
-﻿// <copyright file="UpdateTomlConfig.cs" company="Tilting Point Media LLC">
-// Copyright (c) Tilting Point Media LLC. All rights reserved.
-// </copyright>
+﻿// Copyright (c) Tilting Point Media LLC. All rights reserved.
 
 using System.Text.RegularExpressions;
 using TiltingPoint.Installer.Editor.Data;
