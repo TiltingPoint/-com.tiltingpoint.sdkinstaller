@@ -23,8 +23,6 @@ namespace TiltingPoint.Installer.Editor.Pages
             "Welcome to Tilting Point Package Installer.\n\n" +
             "We will help you to add Tilting Point packages into your project with few clicks.\n\n" +
             "To get access to Tilting Pont registry we will go through next steps:\n" +
-            "  - Get access to Tilting Point packages registry;\n" +
-            "  - Add access credentials to UPM config;\n" +
             "  - Add registries data;\n" +
             "  - Add any Tilting Point Package you want.\n" +
             "  - Add External Dependency Manager for Unity.\n\n" +
