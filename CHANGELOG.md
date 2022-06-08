@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.7]
+- Remove not required features.
+- Updated documentation.
+
 ## [1.0.6]
 - Fix fetch function.
 - Remove unused code.

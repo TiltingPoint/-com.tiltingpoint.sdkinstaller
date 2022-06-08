@@ -123,8 +123,6 @@ namespace TiltingPoint.Installer.Editor
             pages = new List<IInstallerPage>()
                     {
                         new UserLanding(),
-                        new GetAccessToGitProject(),
-                        new UpdateTomlConfig(),
                         new AddScopedRegistries(),
                         new AddPackages(),
                         new AddExternalDependencyManager(),
