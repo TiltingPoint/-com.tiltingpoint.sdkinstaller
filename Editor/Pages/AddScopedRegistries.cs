@@ -137,7 +137,5 @@ namespace TiltingPoint.Installer.Editor.Pages
 
         private IEnumerable<UnityRegistryData> GetAllRegistries(InstallationConfig config) =>
             new[] {config.TiltingPointRegistry}.Union(config.OtherRegistries);
-
-        private void DrawLine() => EditorGUILayout.LabelField(string.Empty, GUI.skin.horizontalSlider);
     }
 }
